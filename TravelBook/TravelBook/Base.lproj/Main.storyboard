@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-hN-L6L">
+                                <rect key="frame" x="0.0" y="231" width="393" height="492"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fS2-0l-ZNs">
+                                <rect key="frame" x="72" y="107" width="249" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhz-Dq-1wD">
+                                <rect key="frame" x="72" y="159" width="249" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcR-c8-R6U">
+                                <rect key="frame" x="167" y="751" width="61" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pk7-Qr-puF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fS2-0l-ZNs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="124-An-49M"/>
+                            <constraint firstItem="pcR-c8-R6U" firstAttribute="top" secondItem="YKq-hN-L6L" secondAttribute="bottom" constant="28" id="1Px-bX-kaE"/>
+                            <constraint firstItem="fS2-0l-ZNs" firstAttribute="leading" secondItem="qhz-Dq-1wD" secondAttribute="leading" id="3xX-fQ-IDs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pcR-c8-R6U" secondAttribute="bottom" constant="32" id="66P-SD-Y5v"/>
+                            <constraint firstItem="fS2-0l-ZNs" firstAttribute="trailing" secondItem="qhz-Dq-1wD" secondAttribute="trailing" id="HFP-OU-kba"/>
+                            <constraint firstItem="qhz-Dq-1wD" firstAttribute="top" secondItem="fS2-0l-ZNs" secondAttribute="bottom" constant="18" id="HNY-9d-RYH"/>
+                            <constraint firstItem="qhz-Dq-1wD" firstAttribute="centerX" secondItem="YKq-hN-L6L" secondAttribute="centerX" id="IX7-oD-cts"/>
+                            <constraint firstItem="YKq-hN-L6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z3y-YS-OXi"/>
+                            <constraint firstItem="YKq-hN-L6L" firstAttribute="top" secondItem="qhz-Dq-1wD" secondAttribute="bottom" constant="38" id="aDR-95-bFq"/>
+                            <constraint firstItem="fS2-0l-ZNs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="bJ9-KN-fbc"/>
+                            <constraint firstItem="pcR-c8-R6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="jza-0c-mN8"/>
+                            <constraint firstItem="fS2-0l-ZNs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="y6v-bV-dp3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentText" destination="qhz-Dq-1wD" id="hvO-i6-bQH"/>
+                        <outlet property="mapView" destination="YKq-hN-L6L" id="bgU-AF-N4g"/>
+                        <outlet property="nameText" destination="fS2-0l-ZNs" id="haw-EX-Oie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
