@@ -17,6 +17,7 @@
 		336045B02BDFEBDE0076A18A /* TravelBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336045AF2BDFEBDE0076A18A /* TravelBookTests.swift */; };
 		336045BA2BDFEBDE0076A18A /* TravelBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336045B92BDFEBDE0076A18A /* TravelBookUITests.swift */; };
 		336045BC2BDFEBDE0076A18A /* TravelBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336045BB2BDFEBDE0076A18A /* TravelBookUITestsLaunchTests.swift */; };
+		33D979402BE2810700B5545C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9793F2BE2810700B5545C /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		336045B52BDFEBDE0076A18A /* TravelBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		336045B92BDFEBDE0076A18A /* TravelBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBookUITests.swift; sourceTree = "<group>"; };
 		336045BB2BDFEBDE0076A18A /* TravelBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33D9793F2BE2810700B5545C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				336045A32BDFEBDE0076A18A /* LaunchScreen.storyboard */,
 				336045A62BDFEBDE0076A18A /* Info.plist */,
 				3360459E2BDFEBDD0076A18A /* TravelBook.xcdatamodeld */,
+				33D9793F2BE2810700B5545C /* ListViewController.swift */,
 			);
 			path = TravelBook;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				336045A02BDFEBDD0076A18A /* TravelBook.xcdatamodeld in Sources */,
 				3360459A2BDFEBDD0076A18A /* ViewController.swift in Sources */,
+				33D979402BE2810700B5545C /* ListViewController.swift in Sources */,
 				336045962BDFEBDD0076A18A /* AppDelegate.swift in Sources */,
 				336045982BDFEBDD0076A18A /* SceneDelegate.swift in Sources */,
 			);
